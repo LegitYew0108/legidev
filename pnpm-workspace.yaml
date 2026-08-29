@@ -4,6 +4,6 @@
 # ERR_PNPM_IGNORED_BUILDS.
 allowBuilds:
   esbuild: true
-  sharp: set this to true or false
-  unrs-resolver: set this to true or false
+  sharp: true
+  unrs-resolver: true
   workerd: true
