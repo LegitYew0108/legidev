@@ -44,10 +44,11 @@ export function Header() {
           />
         </Link>
         <div className="flex gap-7 pr-15">
-          <NavLink name="About" link="/about" />
-          <NavLink name="Career" link="/career" />
-          <NavLink name="Links" link="/link" />
-          <NavLink name="Blog" link="/blog" />
+          <NavLink name="Home" link="/" />
+          <NavLink name="Career" link="/pages/career" />
+          <NavLink name="Blog" link="/pages/blog" />
+          <NavLink name="About" link="/pages/about" />
+          <NavLink name="Links" link="/pages/links" />
         </div>
       </div>
     </header>

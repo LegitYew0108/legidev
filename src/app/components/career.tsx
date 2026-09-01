@@ -17,7 +17,7 @@ export function Career() {
           <Ellipsis />
         </div>
       </div>
-      <TopPagesLink title="Career" path="/career" />
+      <TopPagesLink title="Career" path="/pages/career" />
     </TopContent>
   );
 }

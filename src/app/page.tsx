@@ -1,8 +1,8 @@
 import { AboutMe } from "./components/aboutMe";
 import { Articles } from "./components/articles";
-import { Career } from "./components/career";
+import { TopCareer } from "./pages/career/components/timeline";
 import { TopImage } from "./components/topImage";
-import { Works } from "./components/works";
+import { WorksSlide } from "./pages/career/components/works";
 
 export default function Home() {
   return (
@@ -11,8 +11,8 @@ export default function Home() {
       <div className="flex justify-center w-full">
         <div className="flex flex-col w-300">
           <AboutMe />
-          <Career />
-          <Works />
+          <TopCareer count={6} />
+          <WorksSlide />
           <Articles />
         </div>
       </div>

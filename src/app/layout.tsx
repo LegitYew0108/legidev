@@ -59,10 +59,10 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any"></link>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#E5E5E5]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#E5E5E5] min-h-screen flex flex-col`}
       >
         <Header />
-        {children}
+        <main className="flex-1 pt-18">{children}</main>
         <Footer />
       </body>
     </html>
