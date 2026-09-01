@@ -1,0 +1,1 @@
+This folder contains the built output assets for the worker "legidev" generated at 2026-08-30T07:49:50.630Z.

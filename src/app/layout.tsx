@@ -15,9 +15,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "legit home page",
+  metadataBase: new URL("https://www.legilegi.dev"),
+
+  title: "れぎっと(Legit)のホームページ",
   description:
-    "This is the legit's website, created for the purpose of keeping records and introducing myself.",
+    "れぎっとのホームページです。自己紹介やポートフォリオの他、自身の技術ブログも書いています！",
+  openGraph: {
+    title: "れぎっと(Legit)のホームページ",
+    description:
+      "れぎっとのホームページです。自己紹介やポートフォリオの他、自身の技術ブログも書いています！",
+    url: "https://www.legilegi.dev",
+    siteName: "れぎっと(Legit)のホームページ",
+    locale: "ja_JP",
+    type: "website",
+
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "れぎっと(Legit)のホームページ",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "れぎっと(Legit)のホームページ",
+    description:
+      "れぎっとのホームページです。自己紹介やポートフォリオの他、自身の技術ブログも書いています！",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 export default function RootLayout({
@@ -28,7 +55,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml"></link>
+        <link rel="icon" href="/favicon.ico" sizes="any"></link>
+        <link rel="icon" href="/favicon.ico" sizes="any"></link>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#E5E5E5]`}

@@ -10,7 +10,7 @@ export function AboutMe() {
           <p className="font-semibold">インターネット名義</p>
           <p className="font-bold text-3xl mb-2">れぎっと(Legit)</p>
           <p className="mb-2 text-lg">
-            大阪大学工学部電子情報工学科情報　システム工学コース　4年
+            大阪大学工学部電子情報工学科　情報システム工学コース　4年
             <br />
             (⇨2027年度より大阪大学大学院　情報科学研究科へ進学予定)
           </p>

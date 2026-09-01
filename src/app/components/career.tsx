@@ -1,4 +1,4 @@
-import { TopContent } from "./topContent";
+import { TopContent, TopPagesLink } from "./topContent";
 
 export function Career() {
   const date = new Date("2005/1/8");
@@ -17,13 +17,14 @@ export function Career() {
           <Ellipsis />
         </div>
       </div>
+      <TopPagesLink title="Career" path="/career" />
     </TopContent>
   );
 }
 
 function CareerCard({ date, title }: { date: Date; title: string }) {
   return (
-    <div className="flex h-13 w-full items-center px-10 bg-white drop-shadow-xl/50 rounded-xl">
+    <div className="flex h-12 w-full items-center px-10 bg-white drop-shadow-xl/50 rounded-xl">
       <div className="flex flex-col text-xl font-regular">
         <p>
           {date.getFullYear().toString()}/{date.getMonth().toString()}/
